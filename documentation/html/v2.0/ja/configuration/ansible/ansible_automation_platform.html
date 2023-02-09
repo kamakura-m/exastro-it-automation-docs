@@ -138,7 +138,7 @@
 <li><a class="reference internal" href="#id6">初期設定</a><ul>
 <li><a class="reference internal" href="#ita">ITA作業用ディレクトリの準備</a></li>
 <li><a class="reference internal" href="#id7">ITA作業用ディレクトリの公開</a></li>
-<li><a class="reference internal" href="#id8">Ansible Automation Platformへのファイル転送ユーザーの準備</a></li>
+<li><a class="reference internal" href="#id8">Ansible Automation Platform へのファイル転送ユーザーの準備</a></li>
 <li><a class="reference internal" href="#ansible-automation-platformgit">Ansible Automation Platformと連携するGitへのユーザーの準備</a></li>
 <li><a class="reference internal" href="#organization">organization追加時の作業</a><ul>
 <li><a class="reference internal" href="#platform-make-organization">1. 組織作成</a></li>
@@ -149,9 +149,9 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#workspace">workspace追加時の作業</a><ul>
-<li><a class="reference internal" href="#ansible-execution-environment-ansible-ee">1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む</a></li>
-<li><a class="reference internal" href="#id14">2. インスタンスグループ作成</a></li>
-<li><a class="reference internal" href="#ansible-ee">3. インスタンスグループにインスタンス ( Ansible ee ) を追加</a></li>
+<li><a class="reference internal" href="#platform-ansible-execution-environment">1. インスタンスを組み込む</a></li>
+<li><a class="reference internal" href="#id15">2. インスタンスグループ作成</a></li>
+<li><a class="reference internal" href="#platform-add-insetance">3. インスタンスグループにインスタンスを追加</a></li>
 <li><a class="reference internal" href="#platform-connection-instance">4. 組織とインスタンスグループの紐づけ</a></li>
 <li><a class="reference internal" href="#exastro-it-automation">5. Exastro IT Automation に認証トークンと組織を登録</a></li>
 </ul>
@@ -200,8 +200,8 @@
 <div class="line-block">
 <div class="line">Ansible driverは以下の機能を提供します。</div>
 </div>
-<table class="docutils align-left" id="id16">
-<caption><span class="caption-text">機能名</span><a class="headerlink" href="#id16" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id18">
+<caption><span class="caption-text">機能名</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>No</p></th>
 <th class="head"><p>機能名</p></th>
@@ -242,8 +242,8 @@
 <div class="line">以下に主なAnsible driver機能利用の構成パターンと構成イメージを記載します。</div>
 <div class="line">※ITAシステムは省略した構成図を記載します。</div>
 </div>
-<table class="docutils align-left" id="id17">
-<caption><span class="caption-text">システム構成パターン</span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id19">
+<caption><span class="caption-text">システム構成パターン</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 3%" />
 <col style="width: 31%" />
@@ -278,14 +278,14 @@
 </div>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Ansible Automation Platform (ハイブリッドパターン)</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Ansible Automation Platform (実行ノード分離)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Ansible Automation Platform (ハイブリッドパターン)を下記に記載します。</p>
-<figure class="align-default" id="id18">
+<figure class="align-default" id="id20">
 <a class="reference internal image-reference" href="../../../../_images/aac.png"><img alt="Ansible Automation Platform (ハイブリッドパターン)" src="../../../../_images/aac.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-text">Ansible Automation Platform (ハイブリッドパターン)</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-text">Ansible Automation Platform (ハイブリッドパターン)</span><a class="headerlink" href="#id20" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="docutils align-left" id="id19">
-<caption><span class="caption-text">システム通信要件</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id21">
+<caption><span class="caption-text">システム通信要件</span><a class="headerlink" href="#id21" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 11%" />
@@ -364,17 +364,17 @@
 <div class="line">※3 代表的な例を記載。Ansibleモジュールにより利用プロトコルが異なる。</div>
 </div>
 </div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Ansible Automation Platform (実行ノード分離)を下記に記載します。</p>
-<figure class="align-default" id="id20">
+<figure class="align-default" id="id22">
 <a class="reference internal image-reference" href="../../../../_images/aac_execution.png"><img alt="Ansible Automation Platform (実行ノード分離)" src="../../../../_images/aac_execution.png" style="width: 1400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Ansible Automation Platform (実行ノード分離)</span><a class="headerlink" href="#id20" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-text">Ansible Automation Platform (実行ノード分離)</span><a class="headerlink" href="#id22" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<table class="docutils align-left" id="id21">
-<caption><span class="caption-text">システム通信要件</span><a class="headerlink" href="#id21" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id23">
+<caption><span class="caption-text">システム通信要件</span><a class="headerlink" href="#id23" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 11%" />
@@ -461,8 +461,8 @@
 <div class="line">Ansible driver はITAシステムのシステム要件に準拠するため、「 <a class="reference internal" href="../../installation/kubernetes.html"><span class="doc">Exastro IT Automation on Kubernetes</span></a> 」を参照してください。</div>
 <div class="line">ここではAnsible Automation Platformの要件を記載します。</div>
 </div>
-<table class="docutils align-left" id="id22">
-<caption><span class="caption-text">Ansible Automation Platformの動作確認済みバージョン</span><a class="headerlink" href="#id22" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id24">
+<caption><span class="caption-text">Ansible Automation Platformの動作確認済みバージョン</span><a class="headerlink" href="#id24" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"></th>
 <th class="head" colspan="4"><p>Ansible Automation Platform</p></th>
@@ -496,10 +496,10 @@
 <div class="line-block">
 <div class="line">ITAとAnsible Automation Platform間のPlaybook連携について説明します。</div>
 </div>
-<figure class="align-default" id="id23">
+<figure class="align-default" id="id25">
 <a class="reference internal image-reference" href="../../../../_images/playbook_link_between_aap_and_container.png"><img alt="ITAとAnsible Automation Platform2.xのPlaybook連携図" src="../../../../_images/playbook_link_between_aap_and_container.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-text">ITAとAnsible Automatio Platform2.x間のPlaybook連携図</span><a class="headerlink" href="#id23" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-text">ITAとAnsible Automatio Platform2.x間のPlaybook連携図</span><a class="headerlink" href="#id25" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -509,8 +509,8 @@
 <div class="line">Ansible Automation Platformインストール後、実行エンジンに応じて各設定を行ってください。</div>
 <div class="line"><br /></div>
 </div>
-<table class="docutils align-left" id="id24">
-<caption><span class="caption-text">Ansible Core システム要件</span><a class="headerlink" href="#id24" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id26">
+<caption><span class="caption-text">Ansible Core システム要件</span><a class="headerlink" href="#id26" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 45%" />
 <col style="width: 55%" />
@@ -555,8 +555,8 @@
 <div class="line">ただし、Ansible Automation Platformのhop nodeにはディレクトリ作成不要です。</div>
 <div class="line"><br /></div>
 </div>
-<table class="docutils align-left" id="id25">
-<caption><span class="caption-text">ITA作業用ディレクトリの作成情報</span><a class="headerlink" href="#id25" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id27">
+<caption><span class="caption-text">ITA作業用ディレクトリの作成情報</span><a class="headerlink" href="#id27" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 77%" />
@@ -590,9 +590,11 @@
 </figure>
 </section>
 <section id="id8">
-<h3>Ansible Automation Platformへのファイル転送ユーザーの準備<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>Ansible Automation Platform へのファイル転送ユーザーの準備<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">ITAからAnsible Automation Platformのプロジェクトを生成する際、Ansible Automation PLatformの下記ディレクトリにPlaybook一式をファイル転送します。ファイル転送するLinuxユーザーを準備してください。</div>
+<div class="line">{{#11: Git連携する箇所がインターフェース情報にない(Gitとの連携方法) }}</div>
+<div class="line"><br /></div>
+<div class="line">ITAからAnsible Automation Platformのプロジェクトを生成する際、Ansible Automation Platform の下記ディレクトリにPlaybook一式をファイル転送します。ファイル転送するLinuxユーザーを準備してください。</div>
 <div class="line"><br /></div>
 <div class="line">・SCM管理ディレクトリ(/var/lib/awx/projects)</div>
 <div class="line">　※Ansible Tower3.xの場合にLinuxユーザーでPlaybook一式をファイル転送します。</div>
@@ -600,23 +602,26 @@
 </div>
 <div class="line-block">
 <div class="line">Linuxユーザーは、Ansible Automation Pltformインストール時に生成されるawxユーザーにパスワードを設定し使用することを強く推奨します。また、awxユーザー以外のユーザーを用意し使用する場合、SCM管理パス(/var/lib/awx/projects)のパーミッションの変更はRedhatのサポート対象外となりますのでご注意ください。</div>
-<div class="line">準備したLinuxユーザーは、ITAシステムに登録する必要があります。「利用手順マニュアル_Ansible-driver」の「Ansible Automation Platformホスト一覧」を参照し、登録を行ってください。</div>
+<div class="line">準備したLinuxユーザーは、ITAシステムに登録する必要があります。「利用手順マニュアル_Ansible-driver」の「 <a class="reference internal" href="../../manuals/ansible-driver/general_operations.html#general-operations-ansible-automation-controlller-hosts"><span class="std std-ref">Ansible Automation Controller ホスト一覧</span></a> 」を参照し、登録を行ってください。</div>
 </div>
 </section>
 <section id="ansible-automation-platformgit">
 <h3>Ansible Automation Platformと連携するGitへのユーザーの準備<a class="headerlink" href="#ansible-automation-platformgit" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
+<div class="line">{{#12: Git連携する箇所がAnsible Automation Controller情報にない(Gitとの連携方法) }}</div>
+<div class="line"><br /></div>
 <div class="line">ITAからAnsible Automation Platformのプロジェクトを生成する際のSCMタイプをGitにしています。</div>
 <div class="line">連携先のGitリポジトリは、Ansible driverのバックヤード機能がインストールされているホストに作成されます。Ansible Automation Platformから、このGitリポジトリにssh鍵認証で接続するLinuxユーザーを準備してください。</div>
 <div class="line"><br /></div>
-<div class="line">準備したLinuxユーザーは、ITAシステムに登録する必要があります。「利用手順マニュアル_Ansible-driver」の「インターフェース情報」の「SCM管理 Git連携先情報」を参照し、登録を行ってください。</div>
-<div class="line">尚、ITAインストーラを使用してITAインストールまたはV1.10.0以降へのバージョンアップをした場合、Gitリポジトリに接続するLinuxユーザーと鍵ファイルを生成し、「インターフェース情報」の「SCM管理 Git連携先情報」の「ユーザー」、「ssh秘密鍵ファイル」を初期設定しているため、個別に作成は不要です。「ホスト名」にAnsible driverのバックヤード機能がインストールされているホスト名（またはIPアドレス）を設定してください。</div>
+<div class="line">準備したLinuxユーザーは、ITAシステムに登録する必要があります。「利用手順マニュアル_Ansible-driver」の「 <a class="reference internal" href="../../manuals/ansible-driver/general_operations.html#general-operations-interface-information"><span class="std std-ref">インターフェース情報</span></a> 」の「SCM管理 Git連携先情報」を参照し、登録を行ってください。</div>
+<div class="line">尚、ITAインストーラを使用してITAインストールまたはV1.10.0以降へのバージョンアップをした場合、Gitリポジトリに接続するLinuxユーザーと鍵ファイルを生成し、「インターフェース情報」の「SCM管理 Git連携先情報」の「ユーザー」、「ssh秘密鍵ファイル」を初期設定しているため、個別に作成は不要です。</div>
+<div class="line">「ホスト名」にAnsible driverのバックヤード機能がインストールされているホスト名（またはIPアドレス）を設定してください。</div>
 <div class="line"><br /></div>
 <div class="line">別のユーザーを使用する場合は、Linuxユーザーと鍵ファイルを生成し「インターフェース情報」の「SCM管理 Git連携先情報」を更新してください。</div>
 <div class="line"><br /></div>
 </div>
-<table class="docutils align-left" id="id26">
-<caption><span class="caption-text">ITAインストール時に生成されるssh鍵認証用Linuxユーザー情報</span><a class="headerlink" href="#id26" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-left" id="id28">
+<caption><span class="caption-text">ITAインストール時に生成されるssh鍵認証用Linuxユーザー情報</span><a class="headerlink" href="#id28" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 15%" />
 <col style="width: 85%" />
@@ -649,6 +654,7 @@
 <div class="line-block">
 <div class="line">organization用の組織を作成します。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
@@ -657,6 +663,7 @@
 </li>
 <li><div class="line-block">
 <div class="line">該当項目を入力し、 <span class="guilabel">保存</span> ボタンをクリックしてください。</div>
+<div class="line"><br /></div>
 <div class="line">必須項目及び設定値については下記の表を参照してください。</div>
 </div>
 </li>
@@ -690,6 +697,7 @@
 <div class="line-block">
 <div class="line">接続トークン払出用のアプリケーション登録をします。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
@@ -698,6 +706,7 @@
 </li>
 <li><div class="line-block">
 <div class="line">該当項目を入力し、 <span class="guilabel">保存</span> ボタンをクリックしてください。</div>
+<div class="line"><br /></div>
 <div class="line">必須項目及び設定値については下記の表を参照してください。</div>
 </div>
 </li>
@@ -739,6 +748,7 @@
 <div class="line-block">
 <div class="line">organization用のユーザーを作成します。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
@@ -747,6 +757,7 @@
 </li>
 <li><div class="line-block">
 <div class="line">該当項目を入力し、 <span class="guilabel">保存</span> ボタンをクリックしてください。</div>
+<div class="line"><br /></div>
 <div class="line">必須項目及び設定値については下記の表を参照してください。</div>
 </div>
 </li>
@@ -792,6 +803,7 @@
 <div class="line-block">
 <div class="line">organization用ユーザーに紐づける組織に対してロールを設定します。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
@@ -812,7 +824,7 @@
 </li>
 <li><div class="line-block">
 <div class="line">リストの項目の選択 では 「 <a class="reference internal" href="#platform-make-organization"><span class="std std-ref">1. 組織作成</span></a> 」 で作成した組織 を選択し、<span class="guilabel">Next</span> ボタンをクリックしてください。</div>
-<div class="line">※「 <a class="reference internal" href="#platform-make-organization"><span class="std std-ref">1. 組織作成</span></a> 」で作成した組織以外のロールは付与しないで下さい。</div>
+<div class="line">※「 <a class="reference internal" href="#platform-make-organization"><span class="std std-ref">1. 組織作成</span></a> 」で作成した組織以外のロールは付与しないでください。</div>
 </div>
 </li>
 <li><div class="line-block">
@@ -828,6 +840,7 @@
 <span id="id13"></span><h4>5. 認証トークン払出<a class="headerlink" href="#platform-output-token" title="この見出しへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">Ansible Automation Platform は「 <a class="reference internal" href="#platform-architecture-user"><span class="std std-ref">3. ユーザー作成</span></a> 」で作成したユーザーでログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
@@ -836,6 +849,7 @@
 </li>
 <li><div class="line-block">
 <div class="line">該当項目を入力し、 <span class="guilabel">保存</span> ボタンを押下する。</div>
+<div class="line"><br /></div>
 <div class="line">必須項目及び設定値については下記の表を参照してください。</div>
 </div>
 </li>
@@ -867,25 +881,29 @@
 </section>
 <section id="workspace">
 <h3>workspace追加時の作業<a class="headerlink" href="#workspace" title="この見出しへのパーマリンク">¶</a></h3>
-<section id="ansible-execution-environment-ansible-ee">
-<span id="platform-ansible-execution-environment"></span><h4>1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む<a class="headerlink" href="#ansible-execution-environment-ansible-ee" title="この見出しへのパーマリンク">¶</a></h4>
-<p>　→にして説明一文いれて、インスタンス（Ansible ee）を組み込んでください。</p>
-</section>
-<section id="id14">
-<h4>2. インスタンスグループ作成<a class="headerlink" href="#id14" title="この見出しへのパーマリンク">¶</a></h4>
+<section id="platform-ansible-execution-environment">
+<span id="id14"></span><h4>1. インスタンスを組み込む<a class="headerlink" href="#platform-ansible-execution-environment" title="この見出しへのパーマリンク">¶</a></h4>
 <div class="line-block">
-<div class="line">※先ほど組み込んだ Ansible ee を追加するインスタンスグループが既にある場合、次の 「 <a class="reference internal" href="#platform-add-insetance"><span class="std std-ref">3. インスタンスグループにインスタンス ( Ansible ee ) を追加</span></a> 」の手順に進んでください。</div>
+<div class="line">インスタンスであるAnsible Execution Environment (以下、Ansible ee とも表記) を組み込んてください。</div>
+</div>
+</section>
+<section id="id15">
+<h4>2. インスタンスグループ作成<a class="headerlink" href="#id15" title="この見出しへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">※ 組み込んだ インスタンス (Ansible ee) を追加するインスタンスグループが既にある場合、次の 「 <a class="reference internal" href="#platform-add-insetance"><span class="std std-ref">3. インスタンスグループにインスタンスを追加</span></a> 」の手順に進んでください。</div>
 </div>
 <div class="line-block">
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
-<div class="line"><span class="menuselection">管理 ‣ インスタンスグループ</span> の 「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む</span></a> 」で組み込んだ Ansible ee を追加するインスタンスグループ選択してください。</div>
+<div class="line"><span class="menuselection">管理 ‣ インスタンスグループ</span> の 「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. インスタンスを組み込む</span></a> 」で組み込んだ Ansible ee を追加するインスタンスグループを選択してください。</div>
 </div>
 </li>
 <li><div class="line-block">
 <div class="line">該当項目を入力し、 <span class="guilabel">保存</span> ボタンを押下する。</div>
+<div class="line"><br /></div>
 <div class="line">必須項目及び設定値については下記の表を参照してください。</div>
 </div>
 </li>
@@ -910,15 +928,16 @@
 </tbody>
 </table>
 </section>
-<section id="ansible-ee">
-<span id="platform-add-insetance"></span><h4>3. インスタンスグループにインスタンス ( Ansible ee ) を追加<a class="headerlink" href="#ansible-ee" title="この見出しへのパーマリンク">¶</a></h4>
+<section id="platform-add-insetance">
+<span id="id16"></span><h4>3. インスタンスグループにインスタンスを追加<a class="headerlink" href="#platform-add-insetance" title="この見出しへのパーマリンク">¶</a></h4>
 <div class="line-block">
-<div class="line">インスタンスグループに「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む</span></a> 」で組み込んだ Ansible ee を追加します。</div>
+<div class="line">インスタンスグループに「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. インスタンスを組み込む</span></a> 」で組み込んだ Ansible ee を追加します。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
-<div class="line"><span class="menuselection">管理 ‣ インスタンスグループ</span> より、「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む</span></a> 」で組み込んだ Ansible ee を追加するインスタンスグループ名をクリックしてください。</div>
+<div class="line"><span class="menuselection">管理 ‣ インスタンスグループ</span> より、「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. インスタンスを組み込む</span></a> 」で組み込んだ Ansible ee を追加するインスタンスグループ名をクリックしてください。</div>
 </div>
 </li>
 <li><div class="line-block">
@@ -926,16 +945,17 @@
 </div>
 </li>
 <li><div class="line-block">
-<div class="line">インスタンスの選択の画面に遷移され、「 <a class="reference internal" href="#platform-ansible-execution-environment"><span class="std std-ref">1. Ansible Execution Environment (以下、Ansible ee とも表記) を組み込む</span></a> 」で組み込んだインスタンス( Ansible ee )が表示されるので選択し、<span class="guilabel">保存</span> ボタンをクリックしてください。</div>
+<div class="line">インスタンスの選択の画面に遷移され、組み込んだインスタンス( Ansible ee )が表示されるので選択し、<span class="guilabel">保存</span> ボタンをクリックしてください。</div>
 </div>
 </li>
 </ol>
 </section>
 <section id="platform-connection-instance">
-<span id="id15"></span><h4>4. 組織とインスタンスグループの紐づけ<a class="headerlink" href="#platform-connection-instance" title="この見出しへのパーマリンク">¶</a></h4>
+<span id="id17"></span><h4>4. 組織とインスタンスグループの紐づけ<a class="headerlink" href="#platform-connection-instance" title="この見出しへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">「 <a class="reference internal" href="#platform-make-organization"><span class="std std-ref">1. 組織作成</span></a> 」で作成した組織と上記で使用したインスタンスグループを紐づけます。</div>
 <div class="line">Ansible Automation Platform は admin(管理ユーザー)でログインしてください。</div>
+<div class="line"><br /></div>
 </div>
 <ol class="arabic">
 <li><div class="line-block">
