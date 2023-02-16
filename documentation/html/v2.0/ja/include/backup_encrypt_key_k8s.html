@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>マニュアル &#8212; Documentation  ドキュメント</title>
+    <title>&lt;no title&gt; &#8212; Documentation  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
@@ -66,11 +66,11 @@
         <dd>
           <div>
             <select name="version" onchange="location.href=value;">
-                file_path: v2.0/ja/manuals/check
+                file_path: v2.0/ja/include/backup_encrypt_key_k8s
                   <option value="#"
                   selected
                   >current</option>
-                file_path: v2.0/ja/manuals/check
+                file_path: v2.0/ja/include/backup_encrypt_key_k8s
                   <option value="#"
                   selected
                   >v2.0 (current)</option>
@@ -86,12 +86,12 @@
         <dd>
           <div>
             <select name="lang" onchange="location.href=value;">
-                file_path: v2.0/ja/manuals/check
+                file_path: v2.0/ja/include/backup_encrypt_key_k8s
                 hasdoc: True
                   <option value="#"
                   selected
                   >日本語</option>
-                file_path: v2.0/en/manuals/check
+                file_path: v2.0/en/include/backup_encrypt_key_k8s
                 hasdoc: False
             </select>
           </div>
@@ -124,8 +124,7 @@
 
 <div id="tableOfContents">
   <div id="tocButton"></div>
-  <ul>
-<li><a class="reference internal" href="#">マニュアル</a></li>
+  <ul class="simple">
 </ul>
 
 </div>
@@ -138,7 +137,7 @@
   <ul>
     <li><a href="../../../index.html">HOME</a></li>
     
-    <li>マニュアル</li>
+    <li>&lt;no title&gt;</li>
   </ul>
 </div>
 
@@ -146,46 +145,42 @@
 <article class="divInner">
 <div class="body" role="main">
 
-  <section id="id1">
-<h1>マニュアル<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+  <div class="line-block">
+<div class="line">Exastro システムのパスワードや認証情報といった機密情報はすべて暗号化されています。</div>
+<div class="line">必ず、下記で取得した暗号化キーをバックアップして、適切に保管してください。</div>
 </div>
-<div id="multiColumnIndex"><div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="platform_management/check.html">システム管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="platform_management/organization.html">1. Organization (オーガナイゼーション)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="platform_management/plan.html">1. リソースプラン</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="organization_management/check.html">オーガナイゼーション管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="organization_management/workspace.html">1. Workspase (ワークスペース)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="organization_management/user.html">2. ユーザー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="organization_management/role.html">3. ロール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="organization_management/aap.html">4. Ansible Automation Platform 連携</a></li>
-<li class="toctree-l2"><a class="reference internal" href="organization_management/organization_settings.html">1. オーガナイゼーション設定</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="it_automation_base/check.html">基本操作</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="it_automation_base/management_console.html">管理コンソール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="it_automation_base/basic_console.html">基本コンソール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="it_automation_base/conductor.html">Conductor</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="create_param/check.html">パラメータ管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="create_param/menu_creation.html">メニュー作成機能</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ansible-driver/check.html">Ansible ドライバ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ansible-driver/general_operations.html">Ansible-driver</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">メンテナンス</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="maintenance/log_list.html">1. ログ一覧</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maintenance/backup_and_restore.html">2. データバックアップ・リストア</a></li>
-</ul>
-</li>
-</ul>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<div class="line-block">
+<div class="line">暗号化キーを紛失した場合、バックアップデータからシステムを復旧した際にデータの復号ができなくなります。</div>
 </div>
-</div></section>
+</div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">コマンド</span><a class="headerlink" href="#id1" title="このコードへのパーマリンク">¶</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exastro IT Automation ENCRYPT_KEY</span>
+kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>ita-secret-ita-global<span class="w"> </span>-n<span class="w"> </span>exastro<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ENCRYPT_KEY}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">出力結果</span><a class="headerlink" href="#id2" title="このコードへのパーマリンク">¶</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">JnIoXzJtPic2MXFqRl1yI1chMj8hWzQrNypmVn41Pk8</span><span class="o">=</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">コマンド</span><a class="headerlink" href="#id3" title="このコードへのパーマリンク">¶</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exastro Platform ENCRYPT_KEY</span>
+kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>platform-secret-pf-global<span class="w"> </span>-n<span class="w"> </span>exastro<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ENCRYPT_KEY}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">出力結果</span><a class="headerlink" href="#id4" title="このコードへのパーマリンク">¶</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">bHFZe2VEVVM2PmFeQDMqNG4oZT4lTlglLjJJekxBTHE</span><span class="o">=</span>
+</pre></div>
+</div>
+</div>
 
 
 </div>
