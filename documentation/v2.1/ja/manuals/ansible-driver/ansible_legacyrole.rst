@@ -5,14 +5,14 @@ Ansible-LegacyRole
 はじめに
 ========
 
-| 本書では、ITAの機能および操作方法について説明します。
+| 本書では、ITAシステムのAnsible-LegacyRoleの機能および操作方法について説明します。
 
 Ansible driver概要
 ==================
 
 .. include:: ../../include/ansible_option_ansible-driver_overview.rst
 
-| Ansible driverには用途に応じて以下3つのモードを用意しています。
+| Ansible driverには用途に応じて以下3つのモードを用意しています。本書ではそのうちLegacy Role モードについて説明します。
 
 #. | **Legacy モード**
    | Ansible標準の機能を用いて各種ホストへ設定を投入します。
@@ -174,7 +174,7 @@ Ansible driver コンソールメニュー構成
 
 1. | **基本コンソールのメニュー**
 
-.. include:: ../../include/ansible_option_ basic-console-menu.rst
+.. include:: ../../include/ansible_option_basic-console-menu.rst
 
 |
 
